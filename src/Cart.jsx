@@ -43,7 +43,7 @@ export default function Cart() {
                 })}
             </div>
             <hr className="border-1" />
-            <div className="grid grid-cols-5 px-3 gap-4 mb-3">
+            <div className="grid grid-cols-5 px-3 gap-4 mb-10 mx-2">
                 <div className="col-span-4 font-bold">Total</div>
                 <div className="font-bold">${Value()}</div>
             </div>
