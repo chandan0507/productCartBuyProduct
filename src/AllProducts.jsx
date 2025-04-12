@@ -33,7 +33,7 @@ export default function AllProducts() {
         {product && allProductDetails.length === 0? (
             <p className="text-center">No Search Found For {product}!</p>
         ) : (
-            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-3">
+            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 mx-3">
                 {allProductDetails.map((eachSingleProduct) => {
                     return <ListEachProduct product={product} key={eachSingleProduct['id']} eachSingleProduct={eachSingleProduct}/>
                 })}

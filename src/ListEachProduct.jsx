@@ -47,9 +47,9 @@ export default function ListEachProduct({ eachSingleProduct, product }) {
             <div className="grid grid-cols-3 gap-3">
 
                 <div className="text-white col-span-3 text-xl">{eachSingleProduct?.title}</div>
-                <div className={`text-white my-2 rounded-full ${getColor} px-2 w-16`}>{eachSingleProduct?.rating} ☆</div>
+                <div className={`text-white my-2 rounded-full ${getColor} px-2 w-16 py-1`}>{eachSingleProduct?.rating} ☆</div>
                 <div className="text-white py-2">{eachSingleProduct?.price}$</div>
-                <button className="rounded-lg py-2 bg-indigo-800 text-white hover:bg-indigo-500 hover:text-black" onClick={() => {
+                <button className="rounded-lg py-1 bg-indigo-800 text-white hover:bg-indigo-500 hover:text-black" onClick={() => {
                     HandleButtonClock(eachSingleProduct)
                 }}>{isTrue ? "Remove" : "Add to Cart"}</button>
             </div>
