@@ -43,7 +43,7 @@ export default function ActualCart({eachSingleProduct, cart, setCart}) {
             <div className="grid grid-cols-3 gap-3">
 
                 <div className="text-white col-span-3 text-xl">{eachSingleProduct?.title}</div>
-                <div className={`text-white my-2 rounded-full ${getColor} px-2 w-[64px] py-1`}>{eachSingleProduct?.rating} ☆</div>
+                <div className={`text-white my-2 rounded-full ${getColor} px-2 w-[70px] py-1`}>{eachSingleProduct?.rating} ☆</div>
                 <div className="text-white py-2">{eachSingleProduct?.price}$</div>
                 <button className="rounded-lg py-2 bg-indigo-800 text-white hover:bg-indigo-500 hover:text-black" onClick={() => {
                     HandleButtonClock(eachSingleProduct)
